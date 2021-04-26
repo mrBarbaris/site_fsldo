@@ -32,6 +32,9 @@ body {
 }
 
 /* menu */
+nav {
+  width: 100%;
+}
 
 .menu {
   display: flex;
@@ -65,7 +68,7 @@ body {
 }
 
 /*about*/
-.about {
+#about {
   background-color: #fff;
   display: flex;
   font-size: 16px;
@@ -76,17 +79,50 @@ body {
 }
 
 /*news*/
-.news {
-  background-color: #999;
+#news {
+  background-color: #fff;
   display: flex;
+  flex-wrap: wrap;
   font-size: 16px;
   height: auto;
+  justify-content: space-between;
   max-width: 1200px;
+  width: 100%;
+
+}
+
+#news-title {
+  text-align: center;
   width: 100%;
 }
 
+.news-item {
+  border-radius: 10px;
+  display: flex;
+  flex: 0 0 32%;
+  flex-direction: column;
+  height: auto;
+  margin: 1px;
+  text-align: center;
+}
+
+.news-item img {
+  border-radius: inherit;
+  width: 100%;
+}
+
+.news-item section{
+  height: 170px;
+  overflow: hidden;
+}
+
+.news-item section:hover {
+  background-color: rgb(201, 186, 186);
+  overflow: visible;
+}
+
 /*calendar*/
-.calendar {
+#calendar {
   background-color: #555;
   display: flex;
   font-size: 16px;
@@ -96,7 +132,7 @@ body {
 }
 
 /*tutorials*/
-.tutorials {
+#tutorials {
   background-color: #888;
   display: flex;
   font-size: 16px;
@@ -107,15 +143,15 @@ body {
 
 /*top*/
 #top {
-  align-items: center;
   background-blend-mode: multiply;
   background-color: #2e3a44;
   background-image: url(../images/IMG_1652.JPG);
   background-size: cover;
   color: #fff;
-  display: flex;
   height: 600px;
-  justify-content: center;
-  
+  text-align: center;
   width: 100%;
+}
+#top h1 {
+  margin: 245px;
 }
